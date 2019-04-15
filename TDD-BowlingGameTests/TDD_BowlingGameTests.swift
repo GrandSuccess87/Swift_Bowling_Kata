@@ -26,6 +26,14 @@ class TDD_BowlingGameTests: XCTestCase {
         }
         XCTAssertEqual(game.score(), 0)
     }
+    
+    func testAllTwoPins() {
+        let game = Game()
+        for _ in 1...20 {
+            game.roll(2)
+        }
+        XCTAssertEqual(game.score(), 40)
+    }
 
     func testExample() {
         // This is an example of a functional test case.
