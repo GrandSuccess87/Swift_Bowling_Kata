@@ -22,8 +22,8 @@ class Game {
     
     private var totalScore = 0
     
-    func roll(_ pins: Int) {
-        totalScore += pins 
+    func roll(pins: Int) {
+        totalScore += pins
     }
     
     func score() -> Int {
